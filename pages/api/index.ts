@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 import {NextApiRequest,NextApiResponse} from 'next'
-import {phraseResolver} from '../../util/api'
+import {phraseResolver} from '../../util/api';
 
 export default async function handler(req:NextApiRequest, res:NextApiResponse) {
    const {query} = req.body as {query:string}
